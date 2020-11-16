@@ -18,7 +18,10 @@ class PlanetParameterizedPackage(unittest.TestCase):
 
 
 @parameterized_class(('earth_years', 'planet', 'expected'), [
-
+    (3299559992, 'Jowisz', 8.81),
+    (49922292, 'Saturn', 0.05),
+    (378843333, 'Uran', 0.14),
+    (332211111, 'Neptun', 0.06),
 ])
 class PlanetParameterizedPackage2(unittest.TestCase):
     def setUp(self):
