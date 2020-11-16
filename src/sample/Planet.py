@@ -1,3 +1,4 @@
 class Planet:
     def count_age(self, earth_years, planet):
-        return ''
+        if planet == 'Ziemia':
+            return earth_years
