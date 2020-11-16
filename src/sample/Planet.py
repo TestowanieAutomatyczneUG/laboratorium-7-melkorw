@@ -1,6 +1,6 @@
 class Planet:
     def count_age(self, earth_years, planet):
-        if type(earth_years) is str and type(planet) is int:
+        if (type(earth_years) is str and type(planet) is int) or type(planet) is bool:
             raise Exception('Zle typy')
         if earth_years < 0:
             raise Exception('Wiek nie moze byc ujemny')
