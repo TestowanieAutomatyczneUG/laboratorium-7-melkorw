@@ -17,5 +17,16 @@ class PlanetParameterizedPackage(unittest.TestCase):
         self.assertEqual(self.tmp.count_age(earth_years, planet), expected)
 
 
+@parameterized_class(('earth_years', 'planet', 'expected'), [
+
+])
+class PlanetParameterizedPackage2(unittest.TestCase):
+    def setUp(self):
+        self.tmp = Planet()
+
+    def test_second_parameterized(self):
+        self.assertEqual(self.tmp.count_age(self.earth_years, self.planet), self.expected)
+
+
 if __name__ == '__main__':
     unittest.main()
