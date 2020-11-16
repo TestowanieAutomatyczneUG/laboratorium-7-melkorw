@@ -1,5 +1,7 @@
 class Planet:
     def count_age(self, earth_years, planet):
+        if earth_years < 0:
+            raise Exception('Wiek nie moze byc ujemny')
         stala = earth_years / 31557600
         if planet == 'Ziemia':
             return round(stala, 2)
