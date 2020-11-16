@@ -13,4 +13,4 @@ class PangramParametrizedFile(unittest.TestCase):
             else:
                 data = line.split(" ")
                 input_value, expected = (data[0], data[1].strip("\n"))
-                self.assertEqual(temporary_pangram.is_pangram(input_value), bool(expected))
+                self.assertEqual(temporary_pangram.is_pangram(input_value), expected)
