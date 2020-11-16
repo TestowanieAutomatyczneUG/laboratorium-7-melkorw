@@ -1,0 +1,4 @@
+.idea
+src/pangramproject.egg-info
+src/sample/__pycache__
+tests/__pycache__
