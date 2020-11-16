@@ -6,11 +6,11 @@ class PangramParametrizedFile(unittest.TestCase):
 
     def test_from_file(self):
         file = open("../data/pangram_tests_file")
-        temporaryPangram = Pangram()
+        temporary_pangram = Pangram()
         for line in file:
             if line.startswith("#") or line.startswith(" ") or line.startswith("\n"):
                 continue
             else:
                 data = line.split(" ")
-                input, expected = str(data[0], data[1].strip("\n"))
-                self.assertEqual(temporaryPangram.is_pangram(input), bool(expected))
+                input_value, expected = str(data[0], data[1].strip("\n"))
+                self.assertEqual(temporary_pangram.is_pangram(input_value), bool(expected))
