@@ -1,7 +1,6 @@
 class Pangram:
     def is_pangram(self, word):
-        if word == 'zbcefuvhijklmngopqrstdwxya':
+        if set('abcdefghijklmnopqrstuvwxyz') - set(word.lower()) == set([]):
             return 'True'
-        if len(word) < 26:
+        else:
             return 'False'
-        return ''
