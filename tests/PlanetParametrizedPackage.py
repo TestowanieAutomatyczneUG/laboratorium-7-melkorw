@@ -17,7 +17,8 @@ class PlanetParameterizedPackage(unittest.TestCase):
         self.assertEqual(self.tmp.count_age(earth_years, planet), expected)
 
     @parameterized.expand([
-        (-100, 'Ziemia', 'Wiek nie moze byc ujemny')
+        (-100, 'Ziemia', 'Wiek nie moze byc ujemny'),
+        ('not_int', 31, 'Zle typy')
     ])
     def test_count_age_parameterized_exceptions(self, earth_years, planet, expected):
         self.assertRaisesRegex(Exception, expected, self.tmp.count_age, earth_years, planet)
