@@ -22,6 +22,7 @@ class PlanetParameterizedPackage(unittest.TestCase):
     (49922292, 'Saturn', 0.05),
     (378843333, 'Uran', 0.14),
     (332211111, 'Neptun', 0.06),
+    (1111, 'Not_exists', 'Planeta nie istnieje')
 ])
 class PlanetParameterizedPackage2(unittest.TestCase):
     def setUp(self):
