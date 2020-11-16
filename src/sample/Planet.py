@@ -17,4 +17,6 @@ class Planet:
             return round(stala / 84.016846, 2)
         elif planet == 'Neptun':
             return round(stala / 164.79132, 2)
+        else:
+            return 'Planeta nie istnieje'
         return ''
