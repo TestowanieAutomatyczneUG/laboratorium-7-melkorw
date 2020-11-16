@@ -8,7 +8,7 @@ __pycache__/
 *.so
 *~
 .idea/
-
+pangramproject.egg-info/
 # due to using tox and pytest
 .tox
 .cache
